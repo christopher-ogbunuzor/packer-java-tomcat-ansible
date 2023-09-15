@@ -53,7 +53,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Packer Init
-        run: packer init .
+        run: packer init packer-build.json.pkr.hcl
 
       - name: Packer Build
         if: "startsWith(github.ref, 'refs/heads/')"
