@@ -15,5 +15,5 @@ see this [link](https://computingforgeeks.com/build-aws-ec2-machine-images-with-
 
 if deployment is successful, you should see the image below
 
-![Tomcat](packer-java-tomcat-ansible/Static/Image/tomcat.png)
+![Tomcat](Static/Image/tomcat.png)
 
