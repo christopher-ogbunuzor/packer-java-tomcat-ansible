@@ -3,8 +3,8 @@ name: Build and Deploy
 on:
   push:
     tags: ["v[0-9].[0-9]+.[0-9]+"]
-    paths:
-      - 'terraform'
+    # paths:
+    #   - 'terraform'
     branches:
       # - "development"
       # - "staging"
@@ -27,6 +27,9 @@ jobs:
   Packer_build_AMI_Job: 
     name: Packer_build_AMI_Job
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packer
     # environment: test
     outputs:
       iteration_id: ${{ steps.hcp.outputs.iteration_id }}
