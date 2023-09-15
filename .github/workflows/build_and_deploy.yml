@@ -27,7 +27,7 @@ jobs:
   Packer_build_AMI_Job: 
     name: Packer_build_AMI_Job
     runs-on: ubuntu-latest
-    environment: test
+    # environment: test
     outputs:
       iteration_id: ${{ steps.hcp.outputs.iteration_id }}
     steps:
