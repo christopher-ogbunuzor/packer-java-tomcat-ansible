@@ -23,7 +23,12 @@ wget https://tomcat.apache.org/tomcat-9.0-doc/appdev/sample/sample.war
 
 see this [link](https://computingforgeeks.com/build-aws-ec2-machine-images-with-packer-and-ansible/?expand_article=1#google_vignette)
 
+
 ## Successful deployment verification
+- Launch EC2 using the packer AMI
+- Open `port 8080`, `custom tcp` protocol on the security group
+- Access page on browser using
+    `http://ec2_public_ip:8080`
 - If deployment is successful, you should see the image below
 
 ![Tomcat](Static/Image/tomcat.png)
