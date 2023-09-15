@@ -30,9 +30,9 @@ jobs:
     defaults:
       run:
         working-directory: packer
-    # environment: test
-    outputs:
-      iteration_id: ${{ steps.hcp.outputs.iteration_id }}
+    environment: test
+    # outputs:
+    #   iteration_id: ${{ steps.hcp.outputs.iteration_id }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
